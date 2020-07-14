@@ -1,0 +1,19 @@
+class Card:
+
+    def __init__(self, cardcolor: str, cardnumber: int):
+        self.__cardcolor = cardcolor
+        self.__cardnumber = cardnumber
+
+    def getColor(self):
+        return str(self.__cardcolor)
+
+    def getNumber(self):
+        return int(self.__cardnumber)
+
+    def isCorrespondedHint(self,hintcolor: str, hintnumber: int):
+        return cardcolor == hintcolor or cardnumber == hintnumber
+
+class Hint:
+
+    def __init__(self,hint: str):
+        self.__hint = hint
